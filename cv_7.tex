@@ -1,0 +1,113 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.3 (29/10/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com) with modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{green} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage{cmap}
+\pdfgentounicode=1
+\usepackage[utf8]{inputenc}
+\usepackage{ragged2e}
+\usepackage[T1]{fontenc}
+\usepackage[english, german]{babel}
+\usepackage{hyphenat}
+\hyphenation{Mathe-matik wieder-gewinnen heizungs-sys-tems}
+
+\usepackage{fontawesome}       
+
+\usepackage{comment}
+\usepackage{pdfpages}
+
+\usepackage[final,tracking=true,kerning=true,spacing=true,factor=1100,stretch=10,shrink=10]{microtype}
+\microtypecontext{spacing=nonfrench}
+%\usepackage[document]{ragged2e}
+
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+\newcommand{\CC}{C\nolinebreak\hspace{-.05em}\raisebox{.3ex}{\small\textbf{+}}\nolinebreak\hspace{-.10em}\raisebox{.3ex}{\small\textbf{+}}}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Daniel} % Your first name
+\familyname{Jakob} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+
+\mobile{\hspace{-.05em}\raisebox{.2ex}{+}353 86 272 3306}
+%\phone{(000) 111 1112}
+%\fax{(000) 111 1113}
+%\email{danieljakob1307@gmail.com}
+\email{danieljakob1307@gmail.com}
+\homepage{www.jakob.ie}{www.jakob.ie} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+\extrainfo{{\faGithub} \href{https://github.com/daniel-jakob}{github.com/daniel-jakob}\\{\faLinkedinSquare} \href{https://www.linkedin.com/in/danieljakob/}{linkedin.com/in/danieljakob}}
+%\photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"A witty and playful quotation" - John Smith}
+
+\newcommand{\selectLanguage}[1]{%
+    \ifstrequal{#1}{english}{\includecomment{english}\excludecomment{german}}{}%
+    \ifstrequal{#1}{german}{\includecomment{german}\excludecomment{english}}{}%
+}
+
+\newcommand{\position}{}
+\newcommand{\setPosition}[1]{\renewcommand{\position}{#1}}
+
+
+\newcommand{\company}{}
+\newcommand{\setCompany}[1]{\renewcommand{\company}{#1}}
+
+%\selectLanguage{english}
+\selectLanguage{german}
+
+\begin{english}
+    \address{Bray}{Co. Wicklow, Ireland}
+\end{english}
+\begin{german}
+    \address{Bray}{Co. Wicklow, Irland}
+\end{german}
+
+%----------------------------------------------------------------------------------------
+    
+\begin{document}
+
+%\input{coverletter.tex}
+
+\newpage
+
+\input{cv.tex}
+
+%\includepdf[pages={1,2,3}]{Daniel Jakob Academic Transcript (Bachelors).pdf}
+
+%\includepdf[pages=-]{Daniel Jakob Academic Transcript (Master's).pdf}
+
+\end{document}

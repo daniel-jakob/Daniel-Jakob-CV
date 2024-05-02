@@ -1,0 +1,8 @@
+*.pdf
+*.sty
+!moderncvcolorgreen.sty
+!tweaklist.sty
+!moderncvstyleclassic.sty
+!moderncvcompatibility.sty
+coverletter.tex
+references.tex
